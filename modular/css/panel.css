@@ -1,0 +1,42 @@
+/* Modulregeln */
+
+.panel {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+/* panel elements */
+
+.panel_header {
+    background-color: #ddd;
+}
+
+.panel_text { /* problematisch: .panel p / .panel>p*/
+    background-color: #eee;
+}
+
+.panel_buttoncontainer {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+.panel_button {
+    /* background-color: #ccc;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;*/
+}
+
+.panel_text_active {
+    font-weight: bold;
+}
+
+.panel_button-ok {
+    /* background-color: rgb(126, 145, 173); */
+}
+
+.panel_button_no {
+    /* background-color: rgb(201, 166, 166); */
+}
+

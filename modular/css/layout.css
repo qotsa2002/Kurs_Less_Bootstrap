@@ -1,0 +1,11 @@
+/* Layout */
+
+.nav {
+    float: left;
+    widows: 150px;
+}
+
+.content {
+    margin-left: 170px;
+}
+

@@ -1,0 +1,22 @@
+div#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div#nav ul li {
+  margin-bottom: 3px;
+}
+div#nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+div#nav ul li:hover {
+  background-color: aqua;
+}
+div#nav ul li {
+  margin-bottom: 3px;
+}
+div#nav ul li a {
+  text-decoration: none;
+  color: black;
+}

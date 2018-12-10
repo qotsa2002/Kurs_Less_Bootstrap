@@ -1,0 +1,15 @@
+/* das erste Beispiel-less */
+
+// Variablen
+@basisfarbe: blue;
+@textfarbe: darken(@basisfarbe, 20%);
+@borderfarbe: @basisfarbe;
+@bgfarbe: lighten(@basisfarbe, 30%);
+
+// Zeilenkommentar wird nicht übernommen
+p {
+    font-size: 1.2em;
+    color: @textfarbe;
+    border: 1px solid @borderfarbe;
+    background-color: @bgfarbe;
+}

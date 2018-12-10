@@ -1,0 +1,48 @@
+.allgemeine-eigenschaften {
+    /* allgemeine Containereigenschaften*/
+    padding: 10pxm;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: red;
+}
+
+.paramcolors(@inputcolor:grey) { // Parameter mit Defaultwert
+    background-color: lighten(@inputcolor, 20%);
+    color: black;
+}
+
+.colors { // einfach ein identifikator für ein mixin
+    background-color: grey;
+    color: black;
+}
+
+.select-was(@type) when (@type = 2) {border: 2px dotted red;}
+.select-was(@type) when (@type = 3) {border: 3px solid green;}
+
+p {
+    // /* allgemeine Containereigenschaften*/
+    // padding: 10pxm;
+    // border: 1px solid black;
+    // border-radius: 5px
+}
+
+.panel {
+    // padding: 10pxm;
+    // border: 1px solid black;
+    // border-radius: 5px
+    .allgemeine-eigenschaften;
+    .paramcolors(red);
+}
+
+.card {
+    // padding: 10pxm;
+    // border: 1px solid black;
+    // border-radius: 5px
+    .allgemeine-eigenschaften
+}
+
+.container {
+.paramcolors(green);
+.paramcolors();
+}
+

@@ -1,0 +1,50 @@
+// out: grid.css, main: grid.less
+
+@basewidth:960px;
+@gapwidth: 20px;
+
+// columns:
+.generate-columns(@n, @i:1) when (@i <= @n) {
+
+    @selname: col;
+    @colwidth: @basewidth / @n;
+
+    .grid-@{selname}-@{i} {
+        color: black;
+        float:left;
+        width: (@colwidth * @i) - @gapwidth;
+        margin: 5px @gapwidth/2 5px @gapwidth/2;
+        // Kosmetik:
+        background-color: #ccc;
+        min-height: 30px;
+
+        // ganz links:
+        &:first-child {
+            width: (@colwidth * @i) - @gapwidth/2;
+            margin: 5px @gapwidth/2 5px 0;
+        }
+        // ganz rechts
+        &:last-child {
+            width: (@colwidth * @i) - @gapwidth/2;
+            margin: 5px 0 5px @gapwidth/2;
+        }
+        &:only-child {
+            width: @colwidth * @i;
+            margin: 5px 0 5px 0;
+        }
+    }
+    // rekursiv:
+    .generate-columns(@n, (@i+1));
+}
+
+.generate-columns(8);
+
+.grid-row {
+    color:black;
+    width: @basewidth; // Basisbreite
+    clear:both;
+    float:left;
+    border: 1px solid #000;
+}
+
+

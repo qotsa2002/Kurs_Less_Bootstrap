@@ -1,0 +1,117 @@
+// Variablen (Farben):
+@basisschwarz: black;
+@dgrau: lighten(@basisschwarz, 20%);
+@mgrau: lighten(@basisschwarz, 30%);
+@hgrau: lighten(@basisschwarz, 40%);
+
+@warning: red;
+@warningtext: darken(@warning, 10%);
+@warningbg: lighten(@warning, 30%);
+
+@info: green;
+@infotext: darken(@info, 10%);
+@infobg: lighten(@info, 30%);
+
+
+
+/* Allgemeine Resets etc...*/
+
+body {
+    margin: 0;
+}
+
+/* Allgemeine, unspezifische Regeln */
+
+body {
+    font-size: 16px;
+    font-family: arial;
+}
+
+/* Layout */
+
+#nav {
+    float:left;
+    width: 150px;
+}
+
+#content {
+    margin-left: 170px;
+}
+
+/* Module */
+
+
+/* Panel */
+.panel {
+    border: 1px solid #000;
+    border-radius:10px;
+    padding: 20px;
+    margin:20px;
+}
+/* Panel-Elements */
+.panel_header {
+    background-color: #ddd;
+}
+
+.panel_text {
+    background-color: #eee;
+}
+
+.panel_buttoncontainer {
+    border:1px solid #aaa;
+    border-radius:5px;
+    padding: 5px;
+}
+
+
+/* Panel-Modifier */
+
+/* Sub-Rolle, Variante */
+.panel-condensed {
+    padding: 10px;
+}
+
+/* per Script ... */
+.panel-text-active {
+    font-weight:bold;
+}
+
+
+
+/* Buttonmodul */
+.btn {
+    width: 100px;
+    padding: 5px;
+    font-size: 1em;
+    font-size: 1rem;
+}
+
+.btn-rounded {
+    border-radius:5px;
+}
+
+.btn-default {
+    background-color: #ccc;
+    border: 1px solid #000;
+    color:black;
+}
+.btn-default:hover {
+    background-color: #bbb;
+}
+
+.btn-warning {
+    background-color: pink;
+    border: 1px solid red;
+    color:red; 
+}
+.btn-warning:hover {
+    background-color: palevioletred;
+}
+.btn-info {
+    background-color: lightgreen;
+    border: 1px solid green;
+    color:green; 
+}
+.btn-info:hover {
+    background-color: darkseagreen;
+}

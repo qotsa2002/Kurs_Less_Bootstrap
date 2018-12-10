@@ -1,14 +1,15 @@
-/* das erste Beispiel-less */
+/* Das allererste Beispiel */
 
-// Variablen
-@basisfarbe: blue;
-@textfarbe: darken(@basisfarbe, 20%);
+// Variablen:
+@basisfarbe: red;
+
+@textfarbe : darken(@basisfarbe, 10%);
 @borderfarbe: @basisfarbe;
-@bgfarbe: lighten(@basisfarbe, 30%);
+@bgfarbe: lighten(@basisfarbe, 40%);
 
-// Zeilenkommentar wird nicht übernommen
+// ist das cool?
 p {
-    font-size: 1.2em;
+    font-size:1.2em;
     color: @textfarbe;
     border: 1px solid @borderfarbe;
     background-color: @bgfarbe;

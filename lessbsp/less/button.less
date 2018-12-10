@@ -1,0 +1,38 @@
+// main: styles.less
+
+
+@import 'variablen';
+
+.btn {
+    width: 100px;
+    padding: 5px;
+    font-size: 1em;
+    font-size: 1rem;
+    &-rounded {
+        border-radius:5px;
+    }
+    &-default {
+        background-color: #ccc;
+        border: 1px solid #000;
+        color:black;
+        &:hover {
+            background-color: #bbb;
+        }
+    }
+    &-warning {
+        background-color: @warningbg;
+        border: 1px solid red;
+        color:@warningtext; 
+        &:hover {
+            background-color: @warningbghover;
+        }
+    }
+    &-info {
+        background-color: @infobg;
+        border: 1px solid green;
+        color:@infotext; 
+        &:hover {
+            background-color: @infobghover;
+        }
+    }
+}

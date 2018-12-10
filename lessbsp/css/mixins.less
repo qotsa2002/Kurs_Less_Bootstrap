@@ -1,48 +1,60 @@
+// Less hilft
+
+// Variablen:
+
+@defaultradius: 5px;
+
+// ... das ist ein MIXIN
+
+
+
 .allgemeine-eigenschaften {
-    /* allgemeine Containereigenschaften*/
-    padding: 10pxm;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: red;
+    padding: 15px;
+    border: 1px solid #000;
+    .makeRadius; // 5px (Default)
 }
 
-.paramcolors(@inputcolor:grey) { // Parameter mit Defaultwert
-    background-color: lighten(@inputcolor, 20%);
+// ... das ist ein Parametermixin:
+.colors() {
+    background-color: #eee;
+    color:black;
+}
+
+.colorsParam(@inputcolor) {
+    background-color: lighten(@inputcolor, 40%);
+    color:@inputcolor;
+}
+
+.makeRadius(@radius: @defaultradius) {
+    border-radius: @radius;
+}
+.selectWas(@typ) 
+when (@typ = 1) {
     color: black;
 }
 
-.colors { // einfach ein identifikator für ein mixin
-    background-color: grey;
-    color: black;
+.test {
+  .selectWas(1)
 }
-
-.select-was(@type) when (@type = 2) {border: 2px dotted red;}
-.select-was(@type) when (@type = 3) {border: 3px solid green;}
 
 p {
-    // /* allgemeine Containereigenschaften*/
-    // padding: 10pxm;
-    // border: 1px solid black;
-    // border-radius: 5px
+    // allgemeine Containereigenschaften
+    // padding: 10px;
+    // border: 1px solid #000;
+    // border-radius: 5px;
+    .allgemeine-eigenschaften;
+    .colors;
 }
 
 .panel {
-    // padding: 10pxm;
-    // border: 1px solid black;
-    // border-radius: 5px
     .allgemeine-eigenschaften;
-    .paramcolors(red);
+    .colorsParam(red);
 }
 
 .card {
-    // padding: 10pxm;
-    // border: 1px solid black;
-    // border-radius: 5px
-    .allgemeine-eigenschaften
+    .allgemeine-eigenschaften;
 }
-
 .container {
-.paramcolors(green);
-.paramcolors();
+    .colors;
+    .makeRadius(@defaultradius * 3); // 15px !
 }
-

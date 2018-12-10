@@ -1,0 +1,29 @@
+.panel {
+    padding: 20px;
+
+    &-condensed {
+        padding: 10px;
+    }
+
+    // & -> .panel
+    &_header {
+        color:black;
+        // & -> .panel_header
+        &-active {
+            background-color: yellow;
+        }
+    }
+    &_text {
+        color:black;
+    }
+    &_button {
+        background-color: #fff;
+        &-default {
+            background-color: #ccc;
+        }
+        &-red {
+            background-color: pink;
+        }
+    }
+}
+

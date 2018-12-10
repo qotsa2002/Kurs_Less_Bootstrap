@@ -71,7 +71,7 @@ Precompiler `lessc`, Verwendung: `lessc css/beispiel1.less css/beispiel1.css`
 * `@import` anderer less-Dateien
 * Mediaqueries: `@media screen and (min-width: 480px) {...}` (= width > 480px)
   * auf zwei Hiearchiestufen: komplettes Layout in einer Regel, oder regeln für einzelne Layout-Elemente
-* Generieren von Layout-Elementen über parameter im Klassennamen s. [Gridbeispiel](lessbsp/grid.less):
+* Generieren von Layout-Elementen über parameter im Klassennamen s. [Gridbeispiel](lessbsp/less/grid.less):
 
 ```less
 .generate-columns(@n, @i:1) when (@i <= @n) {

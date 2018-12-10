@@ -5,7 +5,7 @@ Kurs vom 10.-11.12.2018
 * Bootstrap - Hintergrund und Verwendung; Version 3.3.7 in der DATEV
 * LESS - CSS-Präprozessor mit z.B. Variablen; Basis für Bootstrap
 
-### Modulares CSS
+## Modulares CSS
 #### SMACSS - Scalable and modular Architecture for CSS
 https://smacss.com/
 
@@ -58,6 +58,51 @@ Problem: wirkt auf alle h1 innerhalb von modulX (auch verschachtelt)
 __Wichtig__: Reihenfolge
 
 Klassen ohne attribut-Definition als Identifikatoren (für Tests)
+
+
+## LESS
+
+Precompiler `lessc`, Verwendung: `lessc css/beispiel1.less css/beispiel1.css`
+
+* Variablen: @varname
+* Funktionen: funkt(...)
+* mixins: klassendefinitionen, deren Inhalt per "Inline" in andere Klassendefinitionen aufgenommen wird
+* Namespaces: verschachtelte Struktur ('&' für Bezug auf Parent file:.)
+* `@import` anderer less-Dateien
+* Mediaqueries: `@media screen and (min-width: 480px) {...}` (= width > 480px)
+  * auf zwei Hiearchiestufen: komplettes Layout in einer Regel, oder regeln für einzelne Layout-Elemente
+* Generieren von Layout-Elementen über parameter im Klassennamen s. [Gridbeispiel](lessbsp/grid.less):
+
+```less
+.generate-columns(@n, @i:1) when (@i <= @n) {
+    grid-col-@{i} {
+        color: black;
+        ...
+    }
+
+    // rekursiv
+    .generate-columns(@n, (@i+1));
+}
+
+.generate-columns(4);
+```
+erzeugt grid-col-1 bis grid-col-4  
+
+### Einstellungen:
+* Workspace Settings:
+
+{
+    "less.compile": {
+        "out": false,
+        "main": "styles.less"
+    }
+}
+
+* Settings in .less files:
+
+// out: true / false / name of output file --> Änderung in dieser datei bewirkt Compilierung
+// main: xyz.less     --> Änderung in dieser datei bewirkt Compilierung von xyz.less 
+
 
 
 

@@ -267,9 +267,10 @@ Elemente:
 Pfad: <Repository>\node_modules\bootstrap\less
 
 * bootstrap.less - importiert alle Komponenten-less-Dateien, daraus entsteht \node_modules\bootstrap\dist\css\bootstrap.css
-
-Definitionen überschreiben
-
+* Definitionsdateien aus Bootstrap kopieren. 
+* Definitionen überschreiben
+* kopierte bootstrap.less kann ausgedünnt werden (durch Auskommentieren)
+* Am einfachsten: variables.less anpassen (Faraben, Größen, Anzahlen, Icons)
 
 ## Diverses
 

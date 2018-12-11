@@ -192,6 +192,49 @@ Auch auf andere Elemente anwenden
 
 [Navigation - Verwendung](bootstrapbsp/navitations.html)
 
+### Dropdown Menüs
+
+* `dropdown` - Dropdown-Bereich mit auslösendem Button und Dropdown-Menü
+* `dropdown-menu` - Liste als Dropdown-Menü stylen
+* Attribut `data-toggle` des Auslöse-Buttons wird auf `"dropdown"` gesetzt
+
+```html
+<div class="dropdown">
+    <!-- Triggerbutton - Muss wissen: a) WAS soll ich tun? b) WO soll ich es tun -->
+    <button class="btn btn-info"
+            data-toggle="dropdown" 
+            data-target="#">
+            Trigger
+            <span class="caret"></span>
+    </button>
+    <!-- Menü -->
+    <ul class="dropdown-menu">
+        <li><a href="">Dropdownmenü 1</a></li>
+        <li><a href="">Dropdownmenü 2</a></li>
+        <li><a href="">Dropdownmenü 3</a></li>
+        <li><a href="">Dropdownmenü 4</a></li>
+    </ul>
+</div>
+```
+
+[Dropdown - Verwendung](bootstrapbsp/dropdowns.html)
+
+### Collapsibles
+
+* `collapse` - zeigt an, dass element collapsed ist (element __braucht id__!) un d wird auch für `data-toggle`-Attribut verwendet
+* `href` oder `data-target` verweisen auf Id des ein/auszuklappenden Elementes
+
+```html
+<p> <!-- a) WAS soll ich?: data-toggle b) WO soll ich?: href -->
+    <a href="#collapser1" data-toggle="collapse"> Triggert Collapsible</a>
+</p>
+<!-- Irgendein Inhalt wird als "collapsbar deklariert. Braucht (!) ein Id !!! -->
+<p id="collapser1" class="collapse">Dieser Inhalt wird collapsed.</p>
+<p>Nach dem Collapser... (rutscht hoch, wenn collapsed) </p>
+```
+
+[Collapsible - Verwendung](bootstrapbsp/collapsibles.html)
+
 
 ## Diverses
 

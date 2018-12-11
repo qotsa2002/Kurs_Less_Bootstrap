@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Plugins: Collapsible</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collapsible-Plugin</h1>
+        <!-- Ein Collapsible besitzt einen Trigger ...  -->
+        <p> <!-- z.B. einen LINK: -->
+            <!-- a) WAS soll ich? b) WO soll ich -->
+            <a href="#collapser1" 
+                    class="btn" 
+                    data-toggle="collapse">
+             Triggert Collapsible 1
+           </a>
+           <!-- oder ein Button: -->
+           <!-- a) WAS soll ich? b) WO soll ich -->
+           <button class="btn" 
+                   data-target="#collapser2"
+                   data-toggle="collapse">Triggert Collapsible 2</button>
+        </p>
+
+        <!-- Irgendein Inhalt wird als "collapsbar deklariert. Braucht (!) einen Id !!! -->
+        <p id="collapser1" class="collapse">Collapser 1. Dieser Inhalt wird collapsed. Mit display:none. Und kann wieder eingeblendet werden. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique tenetur id voluptas. Accusantium, aspernatur magnam.</p>
+        <p>Nach dem Collapser... Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita soluta quam deleniti, eaque hic repudiandae sit vero optio? Impedit, quidem!</p>
+
+        <p id="collapser2" class="collapse">Collapser 2 wird auch collapsed. Mit display:none. Und kann wieder eingeblendet werden. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique tenetur id voluptas. Accusantium, aspernatur magnam.</p>
+        <p>Nach dem 2. Collapser... Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita soluta quam deleniti, eaque hic repudiandae sit vero optio? Impedit, quidem!</p>
+    </div>
+    <!-- Scripte hier! Zuerst jQuery!-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Plugins: Dropdown</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dropdown-Plugin</h1>
+        <!-- Dropdown-Struktur-->
+        <div class="dropdown">
+            <!-- Triggerbutton - Muss wissen: a) WAS soll ich tun? b) WO soll ich es tun -->
+            <button class="btn btn-info"
+                    data-toggle="dropdown" 
+                    data-target="#">
+                    Trigger
+                    <span class="caret"></span>
+            </button>
+            <!-- Menü -->
+            <ul class="dropdown-menu">
+                <li><a href="">Dropdownmenü 1</a></li>
+                <li><a href="">Dropdownmenü 2</a></li>
+                <li><a href="">Dropdownmenü 3</a></li>
+                <li><a href="">Dropdownmenü 4</a></li>
+            </ul>
+        </div>
+        <p>Hier ganz normale Inhalte. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestias exercitationem et minus fugiat, quaerat tenetur tempore excepturi autem recusandae error repellendus maiores incidunt repellat iusto nulla nemo totam accusantium officia reprehenderit eaque. Rerum error velit illum dolorem reprehenderit nobis beatae labore ut, eligendi temporibus eius repellat maxime libero iusto blanditiis saepe vero nemo pariatur accusantium repudiandae cupiditate qui laudantium sint eaque. Autem, excepturi id.</p>
+    </div>
+    <!-- Scripte hier! Zuerst jQuery!-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

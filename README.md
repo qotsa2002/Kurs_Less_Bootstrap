@@ -138,6 +138,28 @@ Ist ein __"CSS Framework"__ und enthält:
 
 [Grid-Verwendung](bootstrapbsp/grid01.html)
 
+### Tabellen
+
+* Basis-Klasse `table` - Tabelle mit Zeilentrennlinien
+* Modifier: 
+  * `table-bordered` - seitliche Gitterlinien pro Zelle
+  * `table-striped` - abwechselnde Zeilenfarbe
+  * `table-hover` - Zeile unter der Maus bekommt Hover-Effekt
+
+[Tabellen-Verwendung](bootstrapbsp/tabellen.html)
+
+### Helper
+
+* `pull-right`/`pull-left` - nach rechts oder links ziehen - andere Element in der Row werden darüber positioniert
+* `center-block` - zentriert als eigenen Block
+* `visible-print`/`hidden-print` - nur im Druck sichtbar/unsichtbar
+* `sr-only` - nur sichtbar für __Screenreader__
+* Setzen von Text/Hintergrundfarben (siehe Buttons)
+
+[Helper-Verwendung](bootstrapbsp/helper.html)
+
+
+
 
 ## Diverses
 

@@ -235,6 +235,31 @@ Auch auf andere Elemente anwenden
 
 [Collapsible - Verwendung](bootstrapbsp/collapsibles.html)
 
+### Navigation Bar
+
+Zu beachten: bei xs soll keine Navbar gezeigt werden.
+
+Kann in oder außerhalb eine Containers liegen. Nachteil bei "außerhalb": navbar geht bis zum Rand, Elemente im Container nicht. 
+
+_Alternative: Navbar außerhalb Container, aber die Navbar enthält selbst einen Container._
+
+Elemente:
+* `navbar` - Navigation Bar
+* `navbar-default` - auf  Navigation Bar
+* `navbar-header` - ???
+* `navbar-collapse` - ???
+* `collapse` - für das Attribut `data-toggle` oder dem (div-)Element, in dem collapsed werden soll (?)
+* `navbar-brand` - Titel der Navbar
+* `navbar-toggle` - Button, der das Togglen auslöst
+* `navbar-nav` - für Element mit Klasse `nav`
+
+[navbar - Verwendung: nur Anzeige](bootstrapbsp/navbar01.html)
+
+[navbar - Verwendung: nur Formatierung mit Container](bootstrapbsp/navbar02.html)
+
+[navbar - Verwendung vollständig](bootstrapbsp/navbar03.html), inklusive Wechsel zwischen Navbar und Dropdown
+
+[Überblick auf bootstrap.com](http://getbootstrap.com/docs/3.3/components/#navbar)
 
 ## Diverses
 

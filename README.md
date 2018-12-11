@@ -104,6 +104,39 @@ erzeugt grid-col-1 bis grid-col-4
 // main: xyz.less     --> Änderung in dieser datei bewirkt Compilierung von xyz.less 
 
 
+## Bootstrap
+
+Ist ein __"CSS Framework"__ und enthält:
+* Resets
+* Basis: Typographie, Tabellen, Listen, Formulare etc.
+* Layouts: Grid, Responsive
+* Module: Passive Module
+* Components: "Widgets" + JavaScript
+
+#### Erste Beispiele
+[Einbinden von Bootstrap](bootstrapbsp/bootstrap01.html)
+
+[Verwenden der container Klasse](bootstrapbsp/bootstrap02.html) - Responsiv, 4  Geräteklassen
+
+[Verwenden der container-fluid Klasse](bootstrapbsp/bootstrap03.html)
+
+### Grid - row & column layout
+
+* Standardmäßig 12 Spalten Layout-Raster
+* col-... Items "leben" in div mit `class="row"`
+* Geräteklassen: __xs, sm, md, lg__ - diese werden in den col-Namen verwendet
+  * col-xs-3, col-sm-3, col-md-3, col-lg-3 (gelten jeweils für alle größeren Geräteklassen mit, solange für diese keine Klassenangabe erfolgt)
+* __Grid-Utils__
+  * Offsets für Lücken - Bsp. `col-md-offset-2` für eine Lücke von 2 vor dem aktuellen Element 
+  * Verschieben von Elementen mit push/pull - Bsp. `col-md-push-3` `col-md-pull-2` - wichtig: die Elemente werden __relativ positioniert__ und werden daher bei der Layoutberechnung so behandelt. als ob sie an iherer Ausgangsposition stehen würden.
+  * Zeigen oder Verstecken für Geräteklassen - Bsp.:
+    * `hidden-sm` - nur verstecken bei "small"
+    * `visible-md` - nur sichtbar bei "medium"
+    * `visible-md-inline` - siehe HTML/CSS-Kurs
+    * `visible-md-block`
+    * `visible-md-inline-block`
+
+[Grid-Verwendung](bootstrapbsp/grid01.html)
 
 
 ## Diverses

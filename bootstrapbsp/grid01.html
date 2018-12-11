@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container"><!-- Responsive, 4 Geräteklassen! -->
+        <h1>Bootstrap-Grid</h1>
+        <h2 class="visible-lg-block">Large</h2>
+        <h2 class="visible-md-block">Medium</h2>
+        <h2 class="visible-sm-block">Small</h2>
+        <h2 class="visible-xs-block">XSmall</h2>
+        <p>Inhalte sind in Rows und Columns organisiert...</p>
+        <!-- ab hier Grid: -->
+        <!-- Row 1: -->
+        <div class="row">
+            <!-- Grid-Items als Columns-->
+            <div class="col-sm-6"><b>Spalte 1.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>
+            <div class="col-sm-6"><b>Spalte 2.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et sunt unde quibusdam repellendus magni.</div>
+            <div class="col-sm-12"><b>Spalte 3.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>
+        </div>
+        <!-- Row 2: -->
+        <div class="row">
+                <!-- Grid-Items als Columns-->
+                <div class="col-sm-6 col-md-4"><b>Spalte 1.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>
+                <div class="col-sm-6 col-md-4"><b>Spalte 2.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et sunt unde quibusdam repellendus magni.</div>
+                <div class="col-sm-12 col-md-4"><b>Spalte 3.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>
+        </div>  
+        <!-- Row 3 mit Offsets: -->
+        <div class="row">
+                <!-- Grid-Items als Columns-->
+                <div class="col-sm-6 col-md-4 col-lg-3"><b>Spalte 1.</b> Kein Offset. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-lg-offset-2"><b>Spalte 2.</b> Large Offset 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et sunt unde quibusdam repellendus magni.</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-lg-offset-1"><b>Spalte 3.</b> Large Offset 1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>
+        </div>   
+        <!-- Row 4 mit Push/Pull: -->
+        <div class="row">
+                <!-- Grid-Items als Columns-->
+                <div class="col-sm-6 col-md-4 col-lg-push-4"><b>Spalte 1.</b> Push 4 für LG. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>
+                <div class="col-sm-6 col-md-4 col-lg-pull-4"><b>Spalte 2.</b> Pull 4 für LG. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et sunt unde quibusdam repellendus magni.</div>
+                <div class="col-sm-12 col-md-4"><b>Spalte 3.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>
+        </div>   
+        <div class="row">
+                <!-- Grid-Items als Columns-->
+                <div class="col-sm-6 col-md-4 col-lg-3"><b>Spalte 1.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>
+                <div class="col-sm-6 col-md-4 col-lg-3"><b>Spalte 2.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et sunt unde quibusdam repellendus magni.</div>
+                <div class="col-sm-12 col-md-4 col-lg-3"><b>Spalte 3.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>
+                <div class="col-sm-12 col-md-4 col-lg-3 hidden-md hidden-sm"><b>Spalte 4.</b> Versteckt für MD und SM. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias blanditiis voluptates dolore optio molestias exercitationem.</div>        <div class="col-xs-12 visible-xs visible-md"><b>Spalte 5.</b> Sichtbar in XS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam enim accusantium quod iure aut.</div>        
+        </div>                           
+    </div>
+</body>
+</html>

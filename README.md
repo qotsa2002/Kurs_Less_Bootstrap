@@ -272,6 +272,18 @@ Pfad: <Repository>\node_modules\bootstrap\less
 * kopierte bootstrap.less kann ausgedünnt werden (durch Auskommentieren)
 * Am einfachsten: variables.less anpassen (Faraben, Größen, Anzahlen, Icons)
 
+Workspace-Einstellungen OK?:
+```
+{
+    "less.compile": {
+        "out": "../dist/css/bootstrap.css",
+        "sourceMap": false,
+        "main": "../less/bootstrap.less"
+    }
+}
+```
+
+
 ## Diverses
 
 1em / 1rem - je nach Browser, nicht alle können rem

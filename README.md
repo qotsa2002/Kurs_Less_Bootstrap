@@ -158,7 +158,39 @@ Ist ein __"CSS Framework"__ und enthält:
 
 [Helper-Verwendung](bootstrapbsp/helper.html)
 
+### Buttons, Farben und Texteigenschaften
 
+Farbarten
+* default - weiß ?!
+* primary - blau
+* info - cyan
+* success - grün
+* warning - gelb
+* danger - rot
+
+Buttons
+Styling auf verschiedene Elemente, mit denen Buttons dargestellt werden können: `button`, `input style="button"`, `a href="#"` ...
+
+* `btn`
+* `btn-default`, `btn-primary`, ..., `btn-danger`
+* `btn-sm`, `btn-lg` - kleiner / großer Button
+
+Auch auf andere Elemente anwenden
+* `bg-default`, ..., `bg-danger` - Background Color
+* `text-default`, ..., `text-danger` - Text Color`
+* `text-muted`, `text-uppercase`, ... 
+
+[Button-Verwendung](bootstrapbsp/buttons.html)
+
+### Navigation
+
+* `nav` - (Liste) als Navigation formatieren, default: vertikal wie Liste ausgerichtet
+* `nav-pills` - horizontal ausgerichtet (an Liste)
+* `nav-tabs` - als Taben darstellen (an Liste)
+* `active` - item als aktiven Link hervorheben
+* `pull-right`/`pull-left` - funktioniert auch hier
+
+[Navigation - Verwendung](bootstrapbsp/navitations.html)
 
 
 ## Diverses

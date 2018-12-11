@@ -261,6 +261,16 @@ Elemente:
 
 [Überblick auf bootstrap.com](http://getbootstrap.com/docs/3.3/components/#navbar)
 
+
+## In den Bootstrap-Less-Sourcen
+
+Pfad: <Repository>\node_modules\bootstrap\less
+
+* bootstrap.less - importiert alle Komponenten-less-Dateien, daraus entsteht \node_modules\bootstrap\dist\css\bootstrap.css
+
+Definitionen überschreiben
+
+
 ## Diverses
 
 1em / 1rem - je nach Browser, nicht alle können rem
